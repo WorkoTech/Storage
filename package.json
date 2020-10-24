@@ -1,0 +1,57 @@
+{
+  "name": "@worko/storage",
+  "version": "0.0.0",
+  "description": "Microservice that handle files upload and storage",
+  "keywords": [
+    "microservice",
+    "gpe",
+    "etna",
+    "gdoc",
+    "jbourdale"
+  ],
+  "author": "Jules Bourdalé <jbourdale@advanced-schema.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@rendu-git.etna-alternance.net:module-5130/activity-30494/group-690332.git"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "test": "echo \"Error: run tests from root\""
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^13.13.0",
+    "@types/minio": "^7.0.5",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@teamwork/websocket-json-stream": "^2.0.0",
+    "aws4": "^1.9.1",
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-validator": "^6.3.0",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mime": "^2.4.4",
+    "minio": "^7.0.15",
+    "morgan": "^1.9.1",
+    "pg": "^7.14.0",
+    "sequelize": "^5.21.3",
+    "uuid": "^7.0.3"
+  }
+}
